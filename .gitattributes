@@ -1,0 +1,5 @@
+*.mp4 binary
+*.db binary
+*.npz binary
+*.pt binary
+*.png binary

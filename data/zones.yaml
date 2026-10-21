@@ -1,0 +1,27 @@
+# Restricted Zones are polygons in normalised [0,1] image coords (x, y). Use scripts/preview.py to check them.
+sites:
+  tower-a: {name: Tower Site A, profile: unmanned_tower}
+  hub-b: {name: Hub Site B, profile: staffed_hub}
+  tower-c: {name: Tower Site C, profile: unmanned_tower}
+  hub-d: {name: Hub Site D, profile: staffed_hub}
+  field-e: {name: Field Site E, profile: unmanned_tower}
+cameras:
+  cam-40739:
+    site: tower-a
+    name: Tower A - compound cam
+    zones:
+    - - [0.12, 0.22]
+      - [0.76, 0.22]
+      - [0.76, 0.62]
+      - [0.12, 0.62]
+  cam-4371:
+    site: hub-b
+    name: Hub B - equipment cam
+    zones:
+    - - [0.22, 0.05]
+      - [0.78, 0.05]
+      - [0.78, 1.0]
+      - [0.22, 1.0]
+  cam-fire-01: {site: tower-c, name: Tower C - perimeter cam}
+  cam-smoke-01: {site: hub-d, name: Hub D - yard cam}
+  cam-stock-01: {site: field-e, name: Field E - inspection cam}

@@ -1,0 +1,32 @@
+# Retrieval evaluation queries.
+# relevance = `relevant` (explicit clip ids)  ∪  clips whose data/clips.csv columns match every `relevant_if` condition.
+- query: fire
+  relevant_if: {fire_smoke: "1"}
+- query: smoke rising into the sky
+  relevant_if: {fire_smoke: "1", source: smoke_dataset}
+- query: flames burning
+  relevant_if: {fire_smoke: "1", source: fire_dataset}
+- query: building on fire at night
+  relevant_if: {fire_smoke: "1"}
+- query: camera 4371 person at the equipment cabinet
+  relevant_if: {camera_id: cam-4371}
+- query: tower site compound at night
+  relevant_if: {camera_id: cam-40739}
+- query: people working at the hub site
+  relevant_if: {site_id: hub-b}
+- query: red steel telecom tower
+  relevant_if: {source: telecom_cctv}
+- query: electrical substation transformers
+  relevant_if: {source: stock_site}
+- query: aerial drone view of an industrial plant
+  relevant_if: {source: stock_site}
+- query: workers wearing hard hats
+  relevant_if: {source: stock_site}
+- query: smoke at the hub
+  relevant_if: {fire_smoke: "1", site_id: hub-d}
+- query: fire at the tower
+  relevant_if: {fire_smoke: "1", site_id: tower-c}
+- query: grass field with fence and cabinets
+  relevant_if: {camera_id: cam-40739}
+- query: man in pink shirt near tower
+  relevant_if: {camera_id: cam-4371}

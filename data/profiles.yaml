@@ -1,0 +1,12 @@
+# Site Profile rule engine: hazard × confidence × profile -> Alert severity.
+# An Alert is only ever created as "pending"; a Notification is sent only after human confirmation.
+unmanned_tower:
+  fire_smoke:       {min_conf: 0.40, severity: critical}
+  zone_entry:       {min_conf: 0.40, severity: high}      # nobody should be there, any time
+  removed_object:   {min_conf: 0.45, severity: high}
+  abandoned_object: {min_conf: 0.45, severity: medium}
+staffed_hub:
+  fire_smoke:       {min_conf: 0.40, severity: critical}
+  zone_entry:       {min_conf: 0.50, severity: medium, only_outside_hours: ["08:00", "18:00"]}
+  removed_object:   {min_conf: 0.55, severity: high}
+  abandoned_object: {min_conf: 0.55, severity: low}

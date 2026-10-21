@@ -1,0 +1,118 @@
+{
+  "hazards": {
+    "fire_smoke": {
+      "n_labelled": 129,
+      "positives": 24,
+      "gate_only": {
+        "tp": 23,
+        "fp": 23,
+        "fn": 1,
+        "precision": 0.5,
+        "recall": 0.958,
+        "f1": 0.657
+      },
+      "gate_plus_vlm": {
+        "tp": 23,
+        "fp": 17,
+        "fn": 1,
+        "precision": 0.575,
+        "recall": 0.958,
+        "f1": 0.719
+      },
+      "gate_recall": 0.958
+    }
+  },
+  "cost": {
+    "clips_total": 146,
+    "clips_sent_to_vlm": 72,
+    "clips_pct_to_vlm": 49.3,
+    "frames_total": 2067,
+    "frames_sent_to_vlm": 215,
+    "frames_pct_to_vlm": 10.4,
+    "vlm_tokens_in": 0,
+    "vlm_tokens_out": 0,
+    "est_tokens_if_all_frames": null
+  },
+  "retrieval": {
+    "k": 5,
+    "mean_p_at_k": 0.627,
+    "mean_r_at_k": 0.162,
+    "queries": [
+      {
+        "query": "fire",
+        "p_at_k": 1.0,
+        "r_at_k": 0.21
+      },
+      {
+        "query": "smoke rising into the sky",
+        "p_at_k": 0.6,
+        "r_at_k": 0.23
+      },
+      {
+        "query": "flames burning",
+        "p_at_k": 0.6,
+        "r_at_k": 0.27
+      },
+      {
+        "query": "building on fire at night",
+        "p_at_k": 0.8,
+        "r_at_k": 0.17
+      },
+      {
+        "query": "camera 4371 person at the equipment cabinet",
+        "p_at_k": 1.0,
+        "r_at_k": 0.12
+      },
+      {
+        "query": "tower site compound at night",
+        "p_at_k": 1.0,
+        "r_at_k": 0.12
+      },
+      {
+        "query": "people working at the hub site",
+        "p_at_k": 0.8,
+        "r_at_k": 0.1
+      },
+      {
+        "query": "red steel telecom tower",
+        "p_at_k": 0.0,
+        "r_at_k": 0.0
+      },
+      {
+        "query": "electrical substation transformers",
+        "p_at_k": 0.2,
+        "r_at_k": 0.06
+      },
+      {
+        "query": "aerial drone view of an industrial plant",
+        "p_at_k": 0.4,
+        "r_at_k": 0.12
+      },
+      {
+        "query": "workers wearing hard hats",
+        "p_at_k": 0.4,
+        "r_at_k": 0.12
+      },
+      {
+        "query": "smoke at the hub",
+        "p_at_k": 1.0,
+        "r_at_k": 0.38
+      },
+      {
+        "query": "fire at the tower",
+        "p_at_k": 1.0,
+        "r_at_k": 0.45
+      },
+      {
+        "query": "grass field with fence and cabinets",
+        "p_at_k": 0.6,
+        "r_at_k": 0.07
+      },
+      {
+        "query": "man in pink shirt near tower",
+        "p_at_k": 0.0,
+        "r_at_k": 0.0
+      }
+    ]
+  }
+}
